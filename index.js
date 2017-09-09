@@ -1,5 +1,3 @@
-const httperrors = require('httperrors');
-
 module.exports = (opts = {}) => (qs) => {
   const query = {};
 
@@ -8,14 +6,12 @@ module.exports = (opts = {}) => (qs) => {
   if (query.limit > opts.max_per_page) query.limit = opts.max_per_page;
 
   if (qs.page) {
-    if (!query.limit) throw httperrors.BadRequest('Cannot calculate page without per_page');
-
+    if (!query.limit) throw 'Cannot calculate page without per_page';
     query.offset = query.limit * (qs.page - 1);
   }
 
   if (qs.sort) {
-    if (qs.sort.indexOf(',') > -1) throw httperrors.BadRequest('Cannot sort by multiple properties');
-
+    if (qs.sort.indexOf(',') > -1) throw 'Cannot sort by multiple properties';
     if (qs.sort.charAt(0) === '-') {
       query.order = [[qs.sort.slice(1), 'DESC']];
     } else {
