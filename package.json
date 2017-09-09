@@ -1,6 +1,6 @@
 {
-  "name": "qs-to-sequelize",
-  "version": "2.1.0",
+  "name": "querystring-sequelize",
+  "version": "1.0.0",
   "description": "Transform a querystring into a sequelize query",
   "main": "index.js",
   "scripts": {
@@ -8,23 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davidbanham/qs-to-sequelize.git"
+    "url": "git+https://github.com/leodutra/querystring-sequelize.git"
   },
   "keywords": [
     "querystring",
     "sequelize"
   ],
-  "author": "david@banham.id.au",
+  "author": "leodutra.br@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/davidbanham/qs-to-sequelize/issues"
+    "url": "https://github.com/leodutra/querystring-sequelize/issues"
   },
-  "homepage": "https://github.com/davidbanham/qs-to-sequelize#readme",
+  "homepage": "https://github.com/leodutra/querystring-sequelize#readme",
   "devDependencies": {
-    "mocha": "^3.2.0",
-    "must": "^0.13.2"
+    "mocha": "^3.5.0",
+    "must": "^0.13.4"
   },
-  "dependencies": {
-    "httperrors": "^2.1.0"
-  }
+  "dependencies": {}
 }
