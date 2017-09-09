@@ -1,4 +1,4 @@
-# QS to Sequelize
+# Querystring to Sequelize
 
 This library takes a querystring and turns it into something you can give to Sequelize.
 
